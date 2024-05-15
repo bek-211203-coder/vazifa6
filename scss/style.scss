@@ -1,0 +1,70 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Poppins';
+}
+.container{
+    width: 100%;
+    max-width: 1142px;
+    margin: 0 auto;
+}
+
+.header__container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px;
+
+    // position: fixed;
+    // width: 100%;
+    // background-color: #fff;
+    // z-index: 10;
+
+    .header__nav .nav__itms{
+        list-style: none;
+        display: flex;
+        align-items: center;
+        gap: 40px;
+    }
+
+}
+.itms a{
+    text-decoration: none;
+    font-size: 18px;
+    line-height: 27px;
+    transition: all 0.5s;
+    color: #000; 
+    
+    &:hover{
+        color: #2bc826;
+    }
+}
+.header__container .header__button{
+    padding: 14px 53px;
+    background-color: #3EA83B;
+    border: none;
+    border-radius: 30px;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 27px;
+    color:#fff;
+    transition: all 0.5s;
+    cursor: pointer;
+
+    &:hover{
+        background-color: #1a5a18;
+    }
+}
+.header__button:hover{
+    background-color: #1a5a18;
+}
+
+@import './main';
+
+@import './product';
+
+@import './features';
